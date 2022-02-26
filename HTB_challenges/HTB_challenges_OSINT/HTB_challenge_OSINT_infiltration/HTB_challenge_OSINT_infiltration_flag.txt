@@ -1,0 +1,14 @@
+HTB{Y0ur_Enum3rat10n_1s_Str0ng_Y0ung_0ne}
+
+Description:
+Can you find something to help you break into the company 'Evil Corp LLC'. 
+Recon social media sites to see if you can find any useful information.
+
+Notes:
+Evil Corp LLC
+LinkedIn Profile:
+Had Obvious Flag HTB{WW91IGNhbiBkbyB0aGlzLCBrZWVwIGdvaW5nISEh} - Incorrect
+Scaled LinkedIn page, a few employees but nothing substantial one employee like another challenge.
+Hit up twitter to see what I could find - nothing related
+Tried Instagram as the site - Multiple possibilities (Instagram account plus mentions in posts)
+The third result from Eryn McMahon is an image with her desk and employee card which had a HTB{flag}

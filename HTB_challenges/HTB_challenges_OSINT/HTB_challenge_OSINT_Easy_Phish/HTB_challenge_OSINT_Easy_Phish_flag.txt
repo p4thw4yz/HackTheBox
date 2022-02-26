@@ -1,0 +1,20 @@
+HTB{RIP_SPF_Always_2nd_F1ddl3_2_DMARC}
+
+Description:
+Customers of secure-startup.com have been recieving some 
+very convincing phishing emails, can you figure out why?
+
+Notes:
+Started by having a look at the domain, it was a parked GoDaddy domain, so figured if someone was getting info about secure-startup it must be from some registered info. 
+Put secure-startup.com into a couple lookups and whois but nothing significant.
+Next I tried dig with $ dig TXT secure-startup.com and found something.
+= "v=spf1 a mx ?all - HTB{RIP_SPF_Always_2nd"
+Now I knew i was on the right track but only had half the flag. With abit more on google I found some info on DMARC (Domain-based Message Authentication, Reporting & Conformance) and through a DMARC search I found the remaining part.
+v=DMARC1;p=none;_F1ddl3_2_DMARC}
+knowing that dig should be able to do this as well did a further google and found if I could search the dmarc info by using _dmarc.url in dig.
+
+dig TXT secure-startup.com _dmarc.secure-startup.com
+= "v=spf1 a mx ?all - HTB{RIP_SPF_Always_2nd"
+= "v=DMARC1;p=none;_F1ddl3_2_DMARC}"
+
+HTB{RIP_SPF_Always_2nd_F1ddl3_2_DMARC}

@@ -1,0 +1,14 @@
+HTB{i_W4S_D_I_S_c_O_v_3_R_3_D}
+
+Description:
+We are looking for Sara Medson Cruz's last location, 
+where she left a message. We need to find out what this 
+message is! We only have her email: saramedsoncruz@gmail.com
+.
+Notes:
+Found a tool called ghunt that takes cookies and and email address and finds google account infomation thats accessable
+Found some online reviews based out of brazil.
+Within the comments I found the HTB
+
+Flag:
+HTB{i_W4S_D_I_S_c_O_v_3_R_3_D}

@@ -1,0 +1,20 @@
+HTB{H4v1ngFuN::W1tH-th3;d0ubl3-edg3d::Sw0Rd$$}
+
+Description:
+Blockchain data can't be deleted, and bad actors are using it 
+to store blobs, we want to hunt down the user that has been 
+uploading illegal pictures on the Ethereum Goerli testnet blockchain. 
+We need to find one picture to use it as evidence to take him down. 
+We know he was actively uploading pictures between 2020-07-30 and 2020-08-01.
+
+Notes
+Started by tracking down transactions on the Goerli testnet related to 2020-07-30 and 2020-08-01.
+Lots of transactions happen but was looking for something that may stand out.
+found 2 transactions from the same address 0xb7e53A55dA3EEA0fbD09566afDa143667d77527D going to 0x0000000000000000000000000000000000000001 (blocks 3142346 & 3142349)
+looking into both transactions they had been made by 0xb7e53A55dA3EEA0fbD09566afDa143667d77527D
+as the input was in hex, and I knew we were looking for an image, I used cyberchef and copied both inputs into cyberchef.
+With the first one being the first transaction and the second, the second.
+A few tries later at trying to go from hex to image, after doing abit of googling about blockchain and images I managed 
+to convert the hex to an image.
+
+HTB{H4v1ngFuN::W1tH-th3;d0ubl3-edg3d::Sw0Rd$$}

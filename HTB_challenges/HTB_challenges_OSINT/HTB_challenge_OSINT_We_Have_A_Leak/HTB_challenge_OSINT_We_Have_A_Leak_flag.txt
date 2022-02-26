@@ -1,0 +1,17 @@
+HTB{Sav3_The_Startup_Sav3_The_W0rld_#Hiro}
+
+Description:
+Super Secure Startup's private information is being leaked; can you find out how?
+
+Passwords:
+We Have A Leak:hackthebox
+username:j.terranwald
+password:SupSecStart#Spring2019! (SupSecStart#Winter2018! = Old pwd, Josh Started in Spring 2019)
+HTB{Sav3_The_Startup_Sav3_The_W0rld_#Hiro}
+
+Notes:
+Scoured Super Secure Startup on twitter and its employees to find details.
+Josh was the latest employee and had possibly been the one that achived the files so after a few tried using is username j.terranwald worked for the username zip.
+Moving forward i knew that josh was the one that had done it so, the password password had to have something to do with him.
+According to one of the images the old password was SupSecStart#Winter2018! Took ages to think about but he started in 2019, Josh Started in Spring 2019.
+So he may have changed the password to his start season and year. password:SupSecStart#Spring2019! 

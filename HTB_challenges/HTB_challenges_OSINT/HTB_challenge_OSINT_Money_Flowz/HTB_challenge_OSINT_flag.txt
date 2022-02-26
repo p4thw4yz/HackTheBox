@@ -1,0 +1,15 @@
+HTB{CryPt0Curr3ncy_1s_FuNz!!}
+
+Description: Frank Vitalik is a hustler, can you figure out where the money flows?
+
+Notes
+Searched social media
+Frank Vitalik site:<website>
+Found some freecoinz scam stuff on reddit
+followed it to Steemit link : https://steemit.com/htb/@freecoinz/freecoinz
+Steemit link has reference to eth address for Ropsten testnet 0x1b3247Cd0A59ac8B37A922804D150556dB837699
+looked up address on Ropsten network scanner, lots of people have sent eth to it but only 2 outgoing transactions, one for 0 and another for 0.99 Eth
+Looked at both
+Found HTB as part of transaction message in UTF-8 format
+
+HTB{CryPt0Curr3ncy_1s_FuNz!!}

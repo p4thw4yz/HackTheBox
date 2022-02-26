@@ -1,0 +1,27 @@
+HTB{P4ssw0rd_Br3ach3s_C4n_B3_A_Tr3asur3_Trov3_0f_Inf0rmati0n}
+
+Description
+You managed to pull some interesting files off one of Super Secure 
+Startup's anonymous FTP servers. Via some OSINT work(a torrent or 
+online Password breach site) you have also procured a recent data 
+breach dump. Can you unlock the file and retrieve the key?
+
+Notes
+Used excel as i was on windows to csv the passwords into a file by themselves
+used office2john.py to convert the docx into hash.txt
+used hashcat along with the breached_password file i created t brute force, no luck.
+Searched through the file for a few employees that i knew existed in super secure startup. Only found Bianka Phelps in the password list.
+Could have tried her password, but instead added it to the breach password list. tried hashcat again, no luck.
+
+Scoured the twitter page again and found all the stuff i had seen on the other challenges, felt abit lost by now.
+Went away and thought about it. After i came back, i thought it must have something to do with Bianka, as she was HR as well as had active posts around the same time as the leak.
+As with the previous challenge where the password was SupSecStart#$season$year!, I though I would try the same with Bianka’s password.
+Added Love!March2019 my password list and ran hashcat again as i was on kali and not windows at the time.
+
+Cracked!
+
+back over to windows I entered the password and was met with a base64 looking code so decoded and we have the HTB{flag}
+
+python3 office2john.py key.docx > hash.txt
+hashcat -a 0 -m 9600 -w 3 --username -o found.txt hash.txt breach_passwords.txt
+echo -n 'SFRCe1A0c3N3MHJkX0JyM2FjaDNzX0M0bl9CM19BX1RyM2FzdXIzX1Ryb3YzXzBmX0luZjBybWF0aTBufQ==' | base64 --decode
